@@ -4,10 +4,10 @@ Outline
 We will work through two parallel but similar problems in the tutorial. The
 first will be a demonstration problem in which the full solutions will be shown
 and each step will be explained, the second will be a similar problem that the
-attendees will work in pairs to come up with the solution. I’ll introduce each
-stage of the problem derivation and development in short ~5-10 minute sections
-and then have the attendees complete the derivation of their problem using the
-software tools that have been presented.
+attendees will work on in pairs to come up with the solution. I’ll introduce
+each stage of the problem derivation and development in short ~5 minute
+sections and then have the attendees complete the derivation of their problem
+using the software tools that have been presented.
 
 1. [00:00] Introduction
 
@@ -18,16 +18,16 @@ software tools that have been presented.
 
    - Newton’s Laws, reference frames, velocity, acceleration, forces/torques
    - Ordinary differential equations and their solutions
-   - Briefly mention control, but detail it later in talk.
    - Applications: robots, vehicles, etc
 
 3. [00:10] Brief intro to the software stack (SymPy, SciPy, python-control)
 
    - SymPy and the Mechanics package
-   - SciPy for ODE integration (scipy.ode)
+   - NumPy for array computations
+   - SciPy for ODE integration (scipy.integrate.odeint)
    - matplotlib for 2D plotting and basic animation
    - IPython Notebook for interactive work
-   - python-control for control design
+   - PyDy: Mechanics, CodeGen, Viz
    - Check to see everyone can import all of these and the versions are high
      enough
 
@@ -47,18 +47,16 @@ software tools that have been presented.
    assimulo, pydstool, sundials, etc)
 9. [01:15] Simulate the example problem with SciPy
 10. [01:25] Exercise: Simulate the exercise problem
-11. [01:40] 2D plotting of the state trajectories with matplotlib
-12. [01:45] Excercise: Plot the simulation results of the exercise problem
-13. [01:55] Demonstrate 2D animation the free motion of the example model with
+11. [01:35] Break
+11. [01:50] 2D plotting of the state trajectories with matplotlib
+12. [01:55] Excercise: Plot the simulation results of the exercise problem
+13. [02:05] Demonstrate 2D animation the free motion of the example model with
     matplotlib
-14. [02:10] Exercise: Animate the 2D exercise problem
-15. [02:25] Explain linearization about an equilibrium point and demo with the
-    example problem
-16. [02:35] Exercise: Linearize the exercise problem
-17. [02:45] Brief introduction to control theory and python-control
-18. [02:55] Build a controller for the sample problem with python control
-19. [03:05] Exercise: make controller for the exercise problem
-20. [03:20] Add tracking control to the problem
-21. [03:30] Exercise: add tracking control to student’s problem
-22. [03:45] Demonstrate example of 3D dimensional problem, automation with
+14. [02:20] Exercise: Animate the 2D exercise problem
+15. [02:40] 3D animation of the example problem with PyDyViz
+16. [02:45] Exercise: Animate the exercist problem with PyDyViz
+17. [02:55] Demonstrate example of 3D dimensional problem, automation with
     Kane’s method and Lagrange’s method
+
+I will also have some sessions on implementing controllers for the dynamic
+systems if the class is exceptionally fast.
