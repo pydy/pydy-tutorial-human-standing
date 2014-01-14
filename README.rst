@@ -24,8 +24,8 @@ Goals
 - We'd like to the students to complete an example problem that relates
   somewhat to the hacker/maker robotics world. This could be a robot arm, and
   RC car, or a heli/quad-copter, etc.
-- I am likely going to be able to do the tutorial at a Biomechanics meeting in
-  Akron in March so if the topic can be bio-mechanics that would be preferable.
+- I am going to give the tutorial at a Biomechanics meeting in Akron on March
+  4th so I'm heavily leaning to a biomechanical influenced example problem.
 - Software installation on all platforms should work (and we need VirtualBox or
   Wakari backup plans in case it doesn't).
 - The tutorial must fit into 2 hours and 45 minutes.
@@ -69,11 +69,13 @@ section.
 Intro to tools
 --------------
 
-SymPy: symbols, functions, expressions, derivatives
-SymPy mechanices: dynamicsymbols, vectors, reference frames
-NumPy: basic array creation
-SciPy: odeint
-Matlplotlib: Maybe some 2D plotting
+- Python: basic data types (only needed for the biomechanics meeting were folks
+  may not know Python)
+- NumPy: basic array creation
+- SciPy: odeint
+- SymPy: symbols, functions, expressions, derivatives
+- SymPy mechanices: dynamicsymbols, vectors, reference frames
+- Matlplotlib: Maybe some 2D plotting
 
 Intro to dynamics concepts
 --------------------------
@@ -132,9 +134,53 @@ If there is time we could make a controller and simulate/visualize the results.
 Tasks
 =====
 
-- [ ] Create example problem to see if it works.
-- [ ] Fix the PyDy website! (or make a new Sphinx or Jekyll based Github pages
-  one).
+- Write an abstract for the biomechanics meeting.
+- Write up detailed installation instructions.
+- Make sure this can run on all three major platforms.
+- [Jason] Create the arm example problem to see if it works (fall back is the
+  inverted double pendulum).
+- [ ] Get PyDy.org back online! (either fix Luke's server or create a new site
+  with github pages + sphinx, for example, and move content over).
+
+- [ ] Add the ability to give functions for input in pydy-code-gen (needed for joint torque inputs).
+
 - [ ] Make a PyDy package that includes sympy.physics.mechanics, pydy-viz, and
   pydy-code-gen. Release to PyPi and ensure it installs in Anaconda based
-  enviroments (at least, can check more too) on all three main OS's.
+  environments (at least, can check more too) on all three main OS's. See
+  https://github.com/PythonDynamics/PyDy, ideally this will pip install
+  everything that is needed. We will need to make 0.1.0 releases of pydy-viz
+  and pydy-code-gen too.
+
+- [ ] Get Aaron to make a new SymPy release with updates from us by about February 20th or so.
+
+- [Jason] Write an abstract for the biomechanics meeting.
+
+- [ ] Write up detailed installation instructions. Make sure this can run on
+  all three major platforms. My idea is to use Anaconda + pip install PyDy
+  (grabs latest sympy, pydy-code-gen, and pydy-viz). We should have a fall back
+  too. It may be possible to use cloud.sagemath.com or wakari.io for cloud
+  options. But the other fall back would be usb thumbdrives with a VM setup fo
+  virtual box.
+
+- [Jason, Obinna] Practice on the Cleveland lab before March 4th.
+
+Create Notebooks
+--------------------------
+
+The intro notebooks should be short and sweet (see Jake van der Plas's tutorial
+from PyCon 2013 for examples). The problem will flow very similar to
+http://www.moorepants.info/blog/npendulum.html. I'd like everyone to pick a or
+some notebooks to work on, I've already put some names on them.
+
+0. (Obinna) [10 min] Intro to Python and IPython notebook (only shown at ASB)
+1. (Obinna) [10 min] Intro to basic NumPy + SciPy odeint + basic matplotlib plotting
+2. (Obinna) [10 min] Intro to SymPy
+3. [15 min] Quick overview of rigid body dynamics
+4. [20 min] Intro to PyDy
+5. (Jason) [5 min] Problem definition
+5. (Jason) [20 min] Kinematics
+6. [15 min] Kinetics (define joint torques and gravity).
+7. [10 min] Equations of motion (use KanesMethod class or LagrangesMethod class)
+8. [15 min] Simulation (gen numeric right hand side, odeint, + matplotlib plot of state trajectories)
+9. [15 min] Visualization
+10. [Extra] Linearize + control (lqr using scipy.linalg.solve_continuous_are) + visualization
