@@ -178,9 +178,9 @@ some notebooks to work on, I've already put some names on them.
 3. [15 min] Quick overview of rigid body dynamics
 4. [20 min] Intro to PyDy
 5. (Jason) [5 min] Problem definition
-5. (Jason) [20 min] Kinematics
-6. [15 min] Kinetics (define joint torques and gravity).
-7. [10 min] Equations of motion (use KanesMethod class or LagrangesMethod class)
-8. [15 min] Simulation (gen numeric right hand side, odeint, + matplotlib plot of state trajectories)
-9. [15 min] Visualization
-10. [Extra] Linearize + control (lqr using scipy.linalg.solve_continuous_are) + visualization
+6. (Jason) [20 min] Kinematics
+7. [15 min] Kinetics (define joint torques and gravity).
+8. [10 min] Equations of motion (use KanesMethod class or LagrangesMethod class)
+9. [15 min] Simulation (gen numeric right hand side, odeint, + matplotlib plot of state trajectories)
+10. [15 min] Visualization
+11. [Extra] Linearize + control (lqr using scipy.linalg.solve_continuous_are) + visualization
