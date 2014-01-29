@@ -57,12 +57,6 @@ Goals
   Wakari backup plans in case it doesn't).
 - The tutorial must fit into 2 hours and 45 minutes.
 
-Example Problem
-===============
-
-The tutorial will work through the PyDy workflow in small steps. At the end the
-students should have a working 3 link 2D inverted pendulum model of a human
-that can be used for balancing studies.
 
 Installation
 ============
@@ -86,3 +80,24 @@ Open a terminal window in the notebooks directory and type::
 
 You should see a list of all the notebooks and can click to open them and
 execute.
+
+Example Problem
+===============
+
+The tutorial will work through the PyDy workflow in small steps. At the end the
+students should have a working 3 link 2D inverted pendulum model of a human
+that can be used for balancing studies.
+
+Notebooks
+---------
+
+- n00_python_intro.ipynb
+- n01_dynamics_overview.ipynb
+- n02_problem_introduction.ipynb
+- `n03_kinematics.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/kinematics.ipynb>`_
+- n04_inertia.ipynb
+- n05_kinetics.ipynb
+- n06_equations_of_motion.ipynb
+- n07_simulation.ipynb
+- n08_visualization.ipynb
+- n09_control.ipynb
