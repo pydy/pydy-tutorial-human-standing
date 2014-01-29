@@ -92,7 +92,7 @@ Notebooks
 ---------
 
 - n00_python_intro.ipynb
-- `n01_dynamics_overview.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n03_dynamics_overview.ipynb>`_
+- `n01_dynamics_overview.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n01_dynamics_overview.ipynb>`_
 - n02_problem_introduction.ipynb
 - `n03_kinematics.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n03_kinematics.ipynb>`_
 - n04_inertia.ipynb
