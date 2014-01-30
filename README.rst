@@ -61,6 +61,14 @@ Goals
 Installation
 ============
 
+Current Situation
+-----------------
+
+Install numpy, scipy, matplotlib, and IPython (we are basing off current
+versions in Anaconda).
+
+Install sympy, pydy-code-gen, and pydy-viz from master.
+
 Recommend Method
 ----------------
 
