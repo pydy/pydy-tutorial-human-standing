@@ -108,4 +108,4 @@ Notebooks
 - `n06_equations_of_motion.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n06_equations_of_motion.ipynb>`_
 - `n07_simulation.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n07_simulation.ipynb>`_
 - n08_visualization.ipynb
-- n09_control.ipynb
+- `n09_control.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n09_control.ipynb>`_

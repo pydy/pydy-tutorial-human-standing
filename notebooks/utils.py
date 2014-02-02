@@ -8,9 +8,9 @@ def controllable(a, b):
 
     Parameters
     ----------
-    a : numpy.Matrix, shape(n,n)
+    a : array_like, shape(n,n)
         The state matrix.
-    b : numpy.Matrix, shape(n,r)
+    b : array_like, shape(n,r)
         The input matrix.
 
     Returns
@@ -18,6 +18,8 @@ def controllable(a, b):
     controllable : boolean
 
     """
+    a = np.matrix(a)
+    b = np.matrix(b)
     n = a.shape[0]
     controllability_matrix = []
     for i in range(n):
