@@ -104,7 +104,7 @@ Notebooks
 - n02_problem_introduction.ipynb
 - `n03_kinematics.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n03_kinematics.ipynb>`_
 - `n04_inertia.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n04_inertia.ipynb>`_
-- n05_kinetics.ipynb
+- `n05_kinetics.ipynb <http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n05_kinetics.ipynb>`_
 - n06_equations_of_motion.ipynb
 - n07_simulation.ipynb
 - n08_visualization.ipynb
