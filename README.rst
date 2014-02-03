@@ -96,7 +96,7 @@ These are the notebooks for the tutorial.
 - n05_kinetics.ipynb_
 - n06_equations_of_motion.ipynb_
 - n07_simulation.ipynb_
-- n08_visualization.ipynb
+- n08_visualization.ipynb_
 - n09_control.ipynb_
 
 .. _n01_dynamics_overview.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n01_dynamics_overview.ipynb
@@ -105,4 +105,5 @@ These are the notebooks for the tutorial.
 .. _n05_kinetics.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n05_kinetics.ipynb
 .. _n06_equations_of_motion.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n06_equations_of_motion.ipynb
 .. _n07_simulation.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n07_simulation.ipynb
+.. _n08_visualization.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n08_visualization.ipynb
 .. _n09_control.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n09_control.ipynb
