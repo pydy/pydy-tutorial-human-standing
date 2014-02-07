@@ -88,7 +88,7 @@ Notebooks
 
 These are the notebooks for the tutorial.
 
-- n00_python_intro.ipynb
+- n00_python_intro.ipynb_
 - n01_dynamics_overview.ipynb_
 - n02_problem_introduction.ipynb
 - n03_kinematics.ipynb_
