@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from pydy_code_gen.code import numeric_right_hand_side
+from pydy_code_gen.code import generate_ode_function
 from numpy import array, linspace, deg2rad, ones
 from scipy.integrate import odeint
 
@@ -37,9 +37,9 @@ specified = [ankle_torque, knee_torque, hip_torque]
 # Generate RHS Function
 # =====================
 
-right_hand_side = numeric_right_hand_side(mass_matrix, forcing_vector,
-                                          constants, coordinates, speeds,
-                                          specified)
+right_hand_side = generate_ode_function(mass_matrix, forcing_vector,
+                                        constants, coordinates, speeds,
+                                        specified)
 
 # Specify Numerical Quantities
 # ============================
