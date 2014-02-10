@@ -44,7 +44,7 @@ right_hand_side = generate_ode_function(mass_matrix, forcing_vector,
 # Specify Numerical Quantities
 # ============================
 
-x0 = deg2rad(2.0) * ones(len(coordinates) + len(speeds))
+x0 = deg2rad(5.0) * ones(len(coordinates) + len(speeds))
 
 # taken from male1.txt in yeadon (maybe I should use the values in Winters).
 numerical_constants = array([0.611,  # lower_leg_length [m]
@@ -68,7 +68,8 @@ args = {'constants': numerical_constants,
 # ========
 
 frames_per_sec = 60
+final_time = 5.0
 
-t = linspace(0.0, 10.0, 10 * frames_per_sec)
+t = linspace(0.0, final_time, final_time * frames_per_sec)
 
 y = odeint(right_hand_side, x0, t, args=(args,))
