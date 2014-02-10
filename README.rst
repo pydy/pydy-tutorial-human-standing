@@ -23,16 +23,22 @@ We will cover these main topics:
 - Symbolic derivation of equations of motion for rigid body systems.
 - Numerical simulation of the system.
 - 2D and 3D visualization of the motion of the system.
-- Basic feedback control for stablization.
+- Basic feedback control for stabilization.
 
 The attendees will exposed to various functionality of these Python tools:
 
-- Python
-- SymPy
-- NumPy
-- SciPy
-- matplotlib
-- PyDy
+- Python_
+- The SciPy Stack: SymPy_, NumPy_, SciPy_, matplotlib_, IPython_
+- PyDy_
+
+.. _Python: http://www.python.org
+.. _SciPy Stack: http://www.scipy.org
+.. _SymPy: http://www.sympy.org
+.. _NumPy: http://numpy.scipy.org
+.. _SciPy: http://www.scipy.org/scipylib/index.html
+.. _matplotlib: http://matplotlib.org
+.. _IPython: http://www.ipython.org
+.. _PyDy: http://www.pydy.org
 
 Example Problem
 ===============
@@ -44,7 +50,7 @@ that can be used for balancing studies.
 Installation
 ============
 
-**Note, that the recommended installation procedure does nto work yet, as we
+**Note, that the recommended installation procedure does not work yet, as we
 have not made releases for sympy, pydy, pydy-viz, and pydy-code-gen. The
 development installation is required for now.**
 
@@ -56,7 +62,7 @@ operating system.
 
 Then in a terminal type::
 
-   pip install pydy
+   pip install -U pydy
 
 Development Method
 ------------------
