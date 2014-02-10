@@ -47,8 +47,8 @@ right_hand_side = generate_ode_function(mass_matrix, forcing_vector,
 x0 = deg2rad(2.0) * ones(len(coordinates) + len(speeds))
 
 # taken from male1.txt in yeadon (maybe I should use the values in Winters).
-numerical_constants = array([0.387,  # lower_leg_length [m]
-                             0.611,  # lower_leg_com_length [m]
+numerical_constants = array([0.611,  # lower_leg_length [m]
+                             0.387,  # lower_leg_com_length [m]
                              6.769,  # lower_leg_mass [kg]
                              0.101,  # lower_leg_inertia [kg*m^2]
                              0.424,  # upper_leg_length [m]
