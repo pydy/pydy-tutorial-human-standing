@@ -45,13 +45,16 @@ Example Problem
 
 The tutorial will work through the PyDy workflow in small steps. At the end the
 students should have a working 3 link 2D inverted pendulum model of a human
-that can be used for balancing studies.
+that can be used for balancing studies. The free body diagram of the model is
+shown below:
+
+.. image:: notebooks/figures/human_balance_diagram.png
 
 Installation
 ============
 
 **Note, that the recommended installation procedure does not work yet, as we
-have not made releases for sympy, pydy, pydy-viz, and pydy-code-gen. The
+have not made releases for SymPy, PyDy, pydy-viz, and pydy-code-gen. The
 development installation is required for now.**
 
 Recommend Method
@@ -62,7 +65,13 @@ operating system.
 
 Then in a terminal type::
 
-   pip install -U pydy
+   pip install -U sympy
+
+to upgrade SymPy to version 0.7.5 and::
+
+   pip install pydy
+
+to install PyDy.
 
 Development Method
 ------------------
@@ -96,7 +105,7 @@ These are the notebooks for the tutorial.
 
 - n00_python_intro.ipynb_
 - n01_dynamics_overview.ipynb_
-- n02_problem_introduction.ipynb
+- n02_problem_introduction.ipynb_
 - n03_kinematics.ipynb_
 - n04_inertia.ipynb_
 - n05_kinetics.ipynb_
@@ -107,6 +116,7 @@ These are the notebooks for the tutorial.
 
 .. _n00_python_intro.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n00_python_intro.ipynb
 .. _n01_dynamics_overview.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n01_dynamics_overview.ipynb
+.. _n02_problem_introduction.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n02_problem_introduction.ipynb
 .. _n03_kinematics.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n03_kinematics.ipynb
 .. _n04_inertia.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n04_inertia.ipynb
 .. _n05_kinetics.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n05_kinetics.ipynb
