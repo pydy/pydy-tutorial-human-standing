@@ -40,6 +40,13 @@ The attendees will exposed to various functionality of these Python tools:
 .. _IPython: http://www.ipython.org
 .. _PyDy: http://www.pydy.org
 
+License
+=======
+
+All materials herein are licensed under `Create Commons Attribution 4.0`_.
+
+.. _Create Commons Attribution 4.0: http://creativecommons.org/licenses/by/4.0/
+
 Example Problem
 ===============
 
