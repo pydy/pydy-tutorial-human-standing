@@ -32,7 +32,6 @@ The attendees will exposed to various functionality of these Python tools:
 - PyDy_
 
 .. _Python: http://www.python.org
-.. _SciPy Stack: http://www.scipy.org
 .. _SymPy: http://www.sympy.org
 .. _NumPy: http://numpy.scipy.org
 .. _SciPy: http://www.scipy.org/scipylib/index.html
