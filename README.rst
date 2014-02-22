@@ -60,36 +60,37 @@ shown below:
 Installation
 ============
 
-**Note, that the recommended installation procedure does not work yet, as we
-have not made releases for SymPy, PyDy, pydy-viz, and pydy-code-gen. The
-development installation is required for now.**
+To run these notebooks the `SciPy Stack`_ is required. To obtain the needed
+packages, we are recommending users install the `Anaconda Scientific Python
+Distribution`_ which contains most of the necessary software and eases cross
+platform installation.
 
-Recommend Method
-----------------
+.. _SciPy Stack: http://www.scipy.org/stackspec.html
+.. _Anaconda Scientific Python Distribution: https://store.continuum.io/cshop/anaconda/
 
-Download and install `Anaconda <http://continuum.io/downloads>`_ for your
-operating system.
+First, download and install `Anaconda <http://continuum.io/downloads>`_ for
+your operating system.
 
-Then in a terminal type::
+Then in an Anaconda terminal (Anaconda CMD prompt on Windows) upgrade to
+SymPy 0.7.5 by typing and executing::
 
-   pip install -U sympy
+   pip install --upgrade sympy
 
-to upgrade SymPy to version 0.7.5 and::
+Then install PyDy with::
 
    pip install pydy
 
-to install PyDy.
+Advanced SciPy Stack Installation
+---------------------------------
 
-Development Method
-------------------
+There are many methods to installing the SciPy Stack. If you know what you are
+doing then feel free to install relatively recent versions of NumPy (>= 1.6),
+SciPy (>= 0.9), matplotlib (>= 0.10), and IPython (>=0.13) however you like.
+Keep in mind that the tutorial wil be expected to work with the versions
+provided in Anaconda 1.9, SymPy 0.7.5, and PyDy 0.1.0. You can find `various
+instructions for installing the SciPy stack`_ on the SciPy website.
 
-Install relatively recent versions of NumPy (>= 1.6), SciPy (>= 0.9),
-matplotlib (>= 0.10), and IPython (>=0.13) however you like. Keep in mind that
-the tutorial wil be expected to work with the versions provided in Anaconda
-1.8.
-
-Now install the development versions (HEAD of master) of sympy, pydy-code-gen,
-and pydy-viz.
+.. _various instructions for installing the SciPy stack: http://www.scipy.org/install.html
 
 Use
 ===
@@ -102,8 +103,8 @@ Open a terminal window in the ``notebooks`` directory and type::
 
    ipython notebook
 
-You should see a list of all the notebooks and can click to open them and
-execute.
+Your browser should open and you see a list of all the notebooks and can click
+to open them and execute.
 
 Notebooks
 =========
