@@ -68,7 +68,7 @@ platform installation.
 .. _SciPy Stack: http://www.scipy.org/stackspec.html
 .. _Anaconda Scientific Python Distribution: https://store.continuum.io/cshop/anaconda/
 
-First, download and install `Anaconda <http://continuum.io/downloads>`_ for
+First, `download and install Anaconda <http://continuum.io/downloads>`_ for
 your operating system.
 
 Then in an Anaconda terminal (Anaconda CMD prompt on Windows) upgrade to
