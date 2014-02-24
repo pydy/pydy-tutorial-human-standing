@@ -82,7 +82,8 @@ Then install PyDy with::
 **Note on Web Browser Compatibility** If you want to see the 3D visualizations
 you must have a WebGL compliant browser. See http://caniuse.com/webgl to see if
 your browser is up-to-date. If not, you will need to upgrade or install another
-browser.
+browser. Note that Chrome seems to be the only full proof browser for Webgl,
+but we've had success with the latest Firefox and IE 11.
 
 Advanced SciPy Stack Installation
 ---------------------------------
