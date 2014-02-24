@@ -79,6 +79,11 @@ Then install PyDy with::
 
    pip install pydy
 
+**Note on Web Browser Compatibility** If you want to see the 3D visualizations
+you must have a WebGL compliant browser. See http://caniuse.com/webgl to see if
+your browser is up-to-date. If not, you will need to upgrade or install another
+browser.
+
 Advanced SciPy Stack Installation
 ---------------------------------
 
