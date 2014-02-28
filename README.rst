@@ -117,16 +117,16 @@ Notebooks
 
 These are the notebooks for the tutorial.
 
-- n00_python_intro.ipynb_
-- n01_dynamics_overview.ipynb_
-- n02_problem_introduction.ipynb_
-- n03_kinematics.ipynb_
-- n04_inertia.ipynb_
-- n05_kinetics.ipynb_
-- n06_equations_of_motion.ipynb_
-- n07_simulation.ipynb_
-- n08_visualization.ipynb_
-- n09_control.ipynb_
+- [15 min] n00_python_intro.ipynb_
+- [10 min] n01_dynamics_overview.ipynb_
+- [3 min] n02_problem_introduction.ipynb_
+- [28 min] n03_kinematics.ipynb_
+- [13 min] n04_inertia.ipynb_
+- [18 min] n05_kinetics.ipynb_
+- [18 min] n06_equations_of_motion.ipynb_
+- [23 min] n07_simulation.ipynb_
+- [18 min] n08_visualization.ipynb_
+- [20 min] n09_control.ipynb_
 
 .. _n00_python_intro.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n00_python_intro.ipynb
 .. _n01_dynamics_overview.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n01_dynamics_overview.ipynb
