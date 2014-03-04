@@ -6,16 +6,18 @@ from pydy_viz.scene import Scene
 
 from .simulation import *
 
-ankle_shape = Sphere(color='blue', radius=0.1)
-knee_shape = Sphere(color='red', radius=0.1)
-hip_shape = Sphere(color='green', radius=0.1)
-torso_com_shape = Sphere(color='green', radius=0.1)
+ankle_shape = Sphere(color='black', radius=0.1)
+knee_shape = Sphere(color='black', radius=0.1)
+hip_shape = Sphere(color='black', radius=0.1)
+head_shape = Sphere(color='black', radius=0.125)
 
 ankle_viz_frame = VisualizationFrame(inertial_frame, ankle, ankle_shape)
 knee_viz_frame = VisualizationFrame(inertial_frame, knee, knee_shape)
 hip_viz_frame = VisualizationFrame(inertial_frame, hip, hip_shape)
-torso_com_viz_frame = VisualizationFrame(inertial_frame, torso_mass_center,
-                                         torso_com_shape)
+
+head = Point('N')  # N for Noggin
+head.set_pos(hip, 2 * torso_com_length * torso_frame.y)
+head_viz_frame = VisualizationFrame(inertial_frame, head, head_shape)
 
 constants_dict = dict(zip(constants, numerical_constants))
 
@@ -25,7 +27,7 @@ torso_center = Point('t_c')
 
 lower_leg_center.set_pos(ankle, lower_leg_length / 2 * lower_leg_frame.y)
 upper_leg_center.set_pos(knee, upper_leg_length / 2 * upper_leg_frame.y)
-torso_center.set_pos(hip, torso_com_length / 2 * torso_frame.y)
+torso_center.set_pos(hip, torso_com_length * torso_frame.y)
 
 lower_leg_shape = Cylinder('Lower Leg Cylinder', radius=0.08,
                            length=constants_dict[lower_leg_length],
@@ -35,19 +37,19 @@ lower_leg_viz_frame = VisualizationFrame('Lower Leg', lower_leg_frame,
 
 upper_leg_shape = Cylinder('Upper Leg Cylinder', radius=0.08,
                            length=constants_dict[upper_leg_length],
-                           color='red')
+                           color='green')
 upper_leg_viz_frame = VisualizationFrame('Upper Leg', upper_leg_frame,
                                          upper_leg_center, upper_leg_shape)
 
 torso_shape = Cylinder('Torso Cylinder', radius=0.08,
-                       length=constants_dict[torso_com_length],
-                       color='green')
+                       length=2 * constants_dict[torso_com_length],
+                       color='red')
 
 torso_viz_frame = VisualizationFrame('Torso', torso_frame, torso_center,
                                      torso_shape)
 
 scene = Scene(inertial_frame, ankle,
-              ankle_viz_frame, knee_viz_frame, hip_viz_frame, torso_com_viz_frame,
+              ankle_viz_frame, knee_viz_frame, hip_viz_frame, head_viz_frame,
               lower_leg_viz_frame, upper_leg_viz_frame, torso_viz_frame)
 
 scene.generate_visualization_json(coordinates + speeds, constants, y,
