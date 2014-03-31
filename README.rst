@@ -152,7 +152,7 @@ These are the notebooks for the tutorial.
 
 - [15 min] n00_python_intro.ipynb_
 - [10 min] n01_dynamics_overview.ipynb_
-- [3 min] n02_problem_introduction.ipynb_
+- [ 3 min] n02_problem_introduction.ipynb_
 - [28 min] n03_kinematics.ipynb_
 - [13 min] n04_inertia.ipynb_
 - [18 min] n05_kinetics.ipynb_
