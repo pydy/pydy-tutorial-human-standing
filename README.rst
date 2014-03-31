@@ -82,6 +82,17 @@ Then install PyDy with::
 
 Note that this tutorial only runs on Python 2.7.
 
+MathJax
+-------
+
+These notebooks make use of the MathJax javascript library to render and display
+mathematics. By default IPython loads MathJax from a CDN, however, because of potentially 
+questionable internet access at pycon we recommend you install MathJax locally.
+To do so simply start an ipython session in a terminal and run the following command::
+
+   from IPython.external import mathjax
+   mathjax.install_mathjax()
+
 Web Browser
 -----------
 
