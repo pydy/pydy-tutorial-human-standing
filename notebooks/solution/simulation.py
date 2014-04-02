@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from pydy_code_gen.code import generate_ode_function
-from numpy import array, linspace, deg2rad, ones
+from numpy import array, linspace, deg2rad, ones, concatenate
 from scipy.integrate import odeint
 
 from .equations_of_motion import *
@@ -44,7 +44,9 @@ right_hand_side = generate_ode_function(mass_matrix, forcing_vector,
 # Specify Numerical Quantities
 # ============================
 
-x0 = deg2rad(5.0) * ones(len(coordinates) + len(speeds))
+initial_coordinates = deg2rad(5.0) * array([-1, 1, -1])
+initial_speeds = deg2rad(-5.0) * ones(len(speeds))
+x0 = concatenate((initial_coordinates, initial_speeds), axis=1)
 
 # taken from male1.txt in yeadon (maybe I should use the values in Winters).
 numerical_constants = array([0.611,  # lower_leg_length [m]
