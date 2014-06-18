@@ -161,13 +161,13 @@ These are the notebooks for the tutorial.
 - [18 min] n08_visualization.ipynb_
 - [20 min] n09_control.ipynb_
 
-.. _n00_python_intro.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n00_python_intro.ipynb
-.. _n01_dynamics_overview.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n01_dynamics_overview.ipynb
-.. _n02_problem_introduction.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n02_problem_introduction.ipynb
-.. _n03_kinematics.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n03_kinematics.ipynb
-.. _n04_inertia.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n04_inertia.ipynb
-.. _n05_kinetics.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n05_kinetics.ipynb
-.. _n06_equations_of_motion.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n06_equations_of_motion.ipynb
-.. _n07_simulation.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n07_simulation.ipynb
-.. _n08_visualization.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n08_visualization.ipynb
-.. _n09_control.ipynb: http://nbviewer.ipython.org/github/PythonDynamics/pydy-tutorial-pycon-2014/blob/master/notebooks/n09_control.ipynb
+.. _n00_python_intro.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n00_python_intro.ipynb
+.. _n01_dynamics_overview.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n01_dynamics_overview.ipynb
+.. _n02_problem_introduction.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n02_problem_introduction.ipynb
+.. _n03_kinematics.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n03_kinematics.ipynb
+.. _n04_inertia.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n04_inertia.ipynb
+.. _n05_kinetics.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n05_kinetics.ipynb
+.. _n06_equations_of_motion.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n06_equations_of_motion.ipynb
+.. _n07_simulation.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n07_simulation.ipynb
+.. _n08_visualization.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n08_visualization.ipynb
+.. _n09_control.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-pycon-2014/blob/master/notebooks/n09_control.ipynb
