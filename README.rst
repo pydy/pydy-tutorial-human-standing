@@ -74,9 +74,9 @@ no longer want the files.
 First, `download and install Anaconda <http://continuum.io/downloads>`_ for
 your operating system.
 
-Then install the latest PyDy (0.2.0) with::
+Then install the latest PyDy (0.2.1) with::
 
-   conda install pydy
+   pip install pydy
 
 Note that this tutorial currently only works with Python 2.7.
 
@@ -125,9 +125,9 @@ There are many methods to installing the SciPy Stack. If you know what you are
 doing then feel free to install relatively recent versions of NumPy (>= 1.6),
 SciPy (>= 0.9), matplotlib (>= 0.10), and IPython (>=0.13) however you like.
 Keep in mind that the tutorial will be tested to work with the versions
-provided in Anaconda 2.0.1 (Python 2.7.7), SymPy 0.7.5, and PyDy 0.2.0. You can
-find `various instructions for installing the SciPy stack`_ on the SciPy
-website.
+provided in Anaconda 2.0.1 (Python 2.7.7). SymPy 0.7.5 and PyDy 0.2.1 are hard
+dependencies. You can find `various instructions for installing the SciPy
+stack`_ on the SciPy website.
 
 .. _various instructions for installing the SciPy stack: http://www.scipy.org/install.html
 
