@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from pydy_viz.shapes import Cylinder, Sphere
-from pydy_viz.visualization_frame import VisualizationFrame
-from pydy_viz.scene import Scene
+from pydy.viz.shapes import Cylinder, Sphere
+from pydy.viz.visualization_frame import VisualizationFrame
+from pydy.viz.scene import Scene
 
 from .simulation import *
 
@@ -29,19 +29,19 @@ lower_leg_center.set_pos(ankle, lower_leg_length / 2 * lower_leg_frame.y)
 upper_leg_center.set_pos(knee, upper_leg_length / 2 * upper_leg_frame.y)
 torso_center.set_pos(hip, torso_com_length * torso_frame.y)
 
-lower_leg_shape = Cylinder('Lower Leg Cylinder', radius=0.08,
+lower_leg_shape = Cylinder(radius=0.08,
                            length=constants_dict[lower_leg_length],
                            color='blue')
 lower_leg_viz_frame = VisualizationFrame('Lower Leg', lower_leg_frame,
                                          lower_leg_center, lower_leg_shape)
 
-upper_leg_shape = Cylinder('Upper Leg Cylinder', radius=0.08,
+upper_leg_shape = Cylinder(radius=0.08,
                            length=constants_dict[upper_leg_length],
                            color='green')
 upper_leg_viz_frame = VisualizationFrame('Upper Leg', upper_leg_frame,
                                          upper_leg_center, upper_leg_shape)
 
-torso_shape = Cylinder('Torso Cylinder', radius=0.08,
+torso_shape = Cylinder(radius=0.08,
                        length=2 * constants_dict[torso_com_length],
                        color='red')
 

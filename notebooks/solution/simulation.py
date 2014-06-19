@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from pydy_code_gen.code import generate_ode_function
+from pydy.codegen.code import generate_ode_function
 from numpy import array, linspace, deg2rad, ones, concatenate
 from scipy.integrate import odeint
 
