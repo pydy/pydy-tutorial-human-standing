@@ -16,5 +16,5 @@ if LooseVersion(sympy.__version__) < LooseVersion('0.7.5'):
            + "printing, please upgrade.")
     print(msg)
 
-if LooseVersion(pydy.__version__) < LooseVersion('0.2.0'):
-    print("Error: PyDy > 0.2.0 is required, please upgrade.")
+if LooseVersion(pydy.__version__) < LooseVersion('0.2.1'):
+    print("Error: PyDy >= 0.2.1 is required, please upgrade.")
