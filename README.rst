@@ -1,23 +1,26 @@
 Introduction
 ============
 
-This is the material for a tutorial on analyzing multibody dynamics with
+This is the material for a tutorial on analyzing `multibody dynamics`_ with
 scientific Python tools. It was first given as "Simulation and Control of
 Biomechanical Systems with Python" at the `Midwest American Society of
 Biomechanics Regional meeting
 <http://www.uakron.edu/engineering/BME/ASB2014/>`_ on March 4th, 2014 in Akron,
-Ohio and then a slightly modified version will be given as "`Dynamics and
+Ohio, then a slightly modified version was given as "`Dynamics and
 Control with Python <https://us.pycon.org/2014/schedule/presentation/132/>`_"
-at PYCON on April 9th, 2014 in Montreal.
+at PYCON on April 9th, 2014 in Montreal, Quebec, Canada, and most recently it
+will be given at SciPy 2014 on July 7, 2014 in Austin, Texas, USA.
 
-Register for the PYCON tutorial here:
+.. _multibody dynamics: http://en.wikipedia.org/wiki/Multibody_system
 
-https://us.pycon.org/2014/
+Register for the SciPy tutorial here:
+
+https://conference.scipy.org/scipy2014/
 
 We will cover these main topics:
 
 - Symbolic derivation of equations of motion for multibody systems.
-- Numerical simulation of the system.
+- Numerical simulation of the resulting system.
 - 2D and 3D visualization of the motion of the system.
 - Basic feedback control for stabilization.
 
@@ -71,27 +74,25 @@ no longer want the files.
 First, `download and install Anaconda <http://continuum.io/downloads>`_ for
 your operating system.
 
-Then in a terminal (Anaconda CMD prompt on Windows) upgrade to SymPy 0.7.5 by
-typing and executing::
+Then install the latest PyDy (0.2.0) with::
 
-   pip install --upgrade sympy
+   conda install pydy
 
-Then install PyDy with::
-
-   pip install pydy
-
-Note that this tutorial only runs on Python 2.7.
+Note that this tutorial currently only works with Python 2.7.
 
 MathJax
 -------
 
-These notebooks make use of the MathJax javascript library to render and display
-mathematics. By default IPython loads MathJax from a CDN, however, because of potentially 
-questionable internet access at pycon we recommend you install MathJax locally.
-To do so simply start an ipython session in a terminal and run the following command::
+These notebooks make use of the MathJax_ javascript library to render and
+display mathematics. By default IPython loads MathJax from a CDN, however,
+because of potentially questionable internet access at the conference we
+recommend you install MathJax locally. To do so, simply start an IPython
+session in a terminal and run the following command::
 
    from IPython.external import mathjax
    mathjax.install_mathjax()
+
+.. _MathJax: http://www.mathjax.org/
 
 Web Browser
 -----------
@@ -115,7 +116,7 @@ Latest version Firefox works.
 Latest version of Chrome works and IE 11 works.
 
 We know that some OS browser combinations do not work. See
-https://github.com/pydy/pydy-viz/issues/113 for more details.
+https://github.com/pydy/pydy/issues/36 for more details.
 
 Advanced SciPy Stack Installation
 ---------------------------------
@@ -124,7 +125,7 @@ There are many methods to installing the SciPy Stack. If you know what you are
 doing then feel free to install relatively recent versions of NumPy (>= 1.6),
 SciPy (>= 0.9), matplotlib (>= 0.10), and IPython (>=0.13) however you like.
 Keep in mind that the tutorial will be tested to work with the versions
-provided in Anaconda 1.9 (Python 2.7.6), SymPy 0.7.5, and PyDy 0.1.0. You can
+provided in Anaconda 2.0.1 (Python 2.7.7), SymPy 0.7.5, and PyDy 0.2.0. You can
 find `various instructions for installing the SciPy stack`_ on the SciPy
 website.
 
@@ -133,12 +134,13 @@ website.
 Use
 ===
 
-Download the latest zipped tutorial materials from:
+Download the latest zipped tutorial materials for your conference from:
 
-http://tinyurl.com/pycon-pydy-tutorial
+https://github.com/pydy/pydy-tutorial-pycon-2014/releases
 
-and then extract the zip file. Open a terminal window in the ``notebooks``
-directory and type::
+and then extract the zip file.
+
+Open a terminal window in the ``notebooks`` directory and type::
 
    ipython notebook
 
