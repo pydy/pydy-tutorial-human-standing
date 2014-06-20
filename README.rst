@@ -74,9 +74,9 @@ no longer want the files.
 First, `download and install Anaconda <http://continuum.io/downloads>`_ for
 your operating system.
 
-Then install the latest PyDy (0.2.1) with::
+Then install the latest PyDy (0.2.1) in a terminal with::
 
-   pip install pydy
+   $ pip install pydy
 
 Note that this tutorial currently only works with Python 2.7.
 
@@ -89,8 +89,8 @@ because of potentially questionable internet access at the conference we
 recommend you install MathJax locally. To do so, simply start an IPython
 session in a terminal and run the following command::
 
-   from IPython.external import mathjax
-   mathjax.install_mathjax()
+   In [1]: from IPython.external import mathjax
+   In [2]: mathjax.install_mathjax()
 
 .. _MathJax: http://www.mathjax.org/
 
@@ -146,7 +146,11 @@ needed.
 Use
 ===
 
-Download the latest zipped tutorial materials for your conference from:
+Either download the latest zipped tutorial materials from:
+
+https://github.com/pydy/pydy-tutorial-pycon-2014/archive/master.zip
+
+Or download the specific release for your conference from:
 
 https://github.com/pydy/pydy-tutorial-pycon-2014/releases
 
@@ -154,7 +158,7 @@ and then extract the zip file.
 
 Open a terminal window in the ``notebooks`` directory and type::
 
-   ipython notebook
+   $ ipython notebook
 
 Your web browser should open and you see a list of all the notebooks and can
 click to open them and execute.
