@@ -131,6 +131,18 @@ stack`_ on the SciPy website.
 
 .. _various instructions for installing the SciPy stack: http://www.scipy.org/install.html
 
+Check the environment
+---------------------
+
+To make sure your software environment is correctly setup, run the
+`check_env.py` script in a terminal with::
+
+   $ python check_env.py
+
+If no errors are returned, then you've correctly installed the software and can
+run the tutorial. If errors appear, then install or upgrade the software as
+needed.
+
 Use
 ===
 
