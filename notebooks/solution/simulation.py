@@ -72,4 +72,4 @@ final_time = 5.0
 t = linspace(0.0, final_time, final_time * frames_per_sec)
 
 y = odeint(right_hand_side, x0, t, args=(array([0.0, 0.0, 0.0]),
-                                         numerical_constants)
+                                         numerical_constants))
