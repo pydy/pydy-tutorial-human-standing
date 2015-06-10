@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from pydy.codegen.code import generate_ode_function
 from numpy import array, linspace, deg2rad, ones, concatenate
 from scipy.integrate import odeint
+from pydy.codegen.ode_function_generators import generate_ode_function
 
 from .equations_of_motion import *
 
@@ -37,9 +37,9 @@ specified = [ankle_torque, knee_torque, hip_torque]
 # Generate RHS Function
 # =====================
 
-right_hand_side = generate_ode_function(mass_matrix, forcing_vector,
-                                        constants, coordinates, speeds,
-                                        specified)
+right_hand_side = generate_ode_function(forcing_vector, coordinates, speeds,
+                                        constants, mass_matrix=mass_matrix,
+                                        specifieds=specified)
 
 # Specify Numerical Quantities
 # ============================
