@@ -63,9 +63,6 @@ numerical_constants = array([0.611,  # lower_leg_length [m]
                              9.81],  # acceleration due to gravity [m/s^2]
                            )
 
-args = {'constants': numerical_constants,
-        'specified': array([0.0, 0.0, 0.0])}
-
 # Simulate
 # ========
 
@@ -74,4 +71,5 @@ final_time = 5.0
 
 t = linspace(0.0, final_time, final_time * frames_per_sec)
 
-y = odeint(right_hand_side, x0, t, args=(args,))
+y = odeint(right_hand_side, x0, t, args=(array([0.0, 0.0, 0.0]),
+                                         numerical_constants)
