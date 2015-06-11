@@ -13,7 +13,8 @@ equilibrium_point = zeros(len(coordinates + speeds))
 equilibrium_dict = dict(zip(coordinates + speeds, equilibrium_point))
 parameter_dict = dict(zip(constants, numerical_constants))
 
-linear_state_matrix, linear_input_matrix, inputs = kane.linearize()
+linear_state_matrix, linear_input_matrix, inputs = \
+    kane.linearize(new_method=True, A_and_B=True)
 f_A_lin = linear_state_matrix.subs(parameter_dict).subs(equilibrium_dict)
 f_B_lin = linear_input_matrix.subs(parameter_dict).subs(equilibrium_dict)
 m_mat = mass_matrix.subs(parameter_dict).subs(equilibrium_dict)
@@ -35,7 +36,7 @@ K = inv(R) * B.T * S
 # creating the rhs function, but the linearize function returns the F_B
 # matrix in the order corresponding to whatever order it finds the joint
 # torques. This would also screw things up if we specified a different
-# ordering of the coordinates and speeds as the standard kana._q + kane._u
+# ordering of the coordinates and speeds as the standard kane._q + kane._u
 
 K = K[[0, 2, 1], :]
 
@@ -43,6 +44,4 @@ K = K[[0, 2, 1], :]
 def controller(x, t):
     return -asarray(dot(K, x)).flatten()
 
-args['specified'] = controller
-
-y = odeint(right_hand_side, x0, t, args=(args,))
+y = odeint(right_hand_side, x0, t, args=(controller, numerical_constants))
