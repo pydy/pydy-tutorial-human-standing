@@ -5,37 +5,23 @@
 from numpy import matrix, dot, asarray
 from numpy.linalg import inv
 from scipy.linalg import solve_continuous_are
+from sympy import Matrix
 
-## from .utils import controllable
-## from .visualization import *
-
-## equilibrium_point = zeros(len(coordinates + speeds))
-## equilibrium_dict = dict(zip(coordinates + speeds, equilibrium_point))
 parameter_dict = dict(zip(constants, numerical_constants))
 
-linear_state_matrix, linear_input_matrix, inputs = \
-    kane.linearize(new_method=True, A_and_B=True)
-f_A_lin = linear_state_matrix.subs(parameter_dict).subs(equilibrium_dict)
-f_B_lin = linear_input_matrix.subs(parameter_dict).subs(equilibrium_dict)
-m_mat = mass_matrix.subs(parameter_dict).subs(equilibrium_dict)
+linearizer = kane.to_linearizer()
+linearizer.r = Matrix(specified)
+A, B = linearizer.linearize(op_point=[equilibrium_dict, parameter_dict],
+                            A_and_B=True)
 
-A = matrix(m_mat.inv() * f_A_lin).astype(float)
-B = matrix(m_mat.inv() * f_B_lin).astype(float)
+A = matrix(A).astype(float)
+B = matrix(B).astype(float)
 
 S = solve_continuous_are(A, B, Q, R)
 
 K = inv(R) * B.T * S
 
-# This is an annoying little issue. We specified the order of things when
-# creating the rhs function, but the linearize function returns the F_B
-# matrix in the order corresponding to whatever order it finds the joint
-# torques. This would also screw things up if we specified a different
-# ordering of the coordinates and speeds as the standard kana._q + kane._u
-
-K = K[[0, 2, 1], :]
-
-
 def controller(x, t):
-    return -asarray(dot(K, x)).flatten()
+    return -dot(K, x)
 
 y = odeint(right_hand_side, x0, t, args=(controller, numerical_constants))
