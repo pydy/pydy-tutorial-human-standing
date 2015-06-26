@@ -52,5 +52,6 @@ scene = Scene(inertial_frame, ankle,
               ankle_viz_frame, knee_viz_frame, hip_viz_frame, head_viz_frame,
               lower_leg_viz_frame, upper_leg_viz_frame, torso_viz_frame)
 
-scene.generate_visualization_json(coordinates + speeds, constants, y,
-                                  numerical_constants)
+scene.constants = constants_dict
+scene.states_symbols = coordinates + speeds
+scene.states_trajectories = y
