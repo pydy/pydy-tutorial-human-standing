@@ -84,13 +84,6 @@ Now instal the latest PyDy (0.3.0) with::
 
    $ conda install -c pydy pydy
 
-Note that this tutorial currently only works with Python 2.7. If the default
-conda environment is Python 3 on your computer, you will need to create an
-environment for Python 2.7::
-
-  $ conda create -n pydy python=2.7 numpy scipy sympy matplotlib ipython-notebook
-  $ source activate pydy  # or just `activate pydy` on windows
-  (pydy)$ conda install -c pydy pydy
 
 MathJax
 -------
@@ -137,9 +130,9 @@ There are many methods to installing the SciPy Stack. If you know what you are
 doing then feel free to install relatively recent versions of NumPy (>= 1.6),
 SciPy (>= 0.9), matplotlib (>= 0.10), and IPython (>=0.3.0) however you like.
 Keep in mind that the tutorial will be tested to work with the versions
-provided in Anaconda 2.2.0 (Python 2.7.9). SymPy 0.7.6 and PyDy 0.3.0 are hard
-dependencies. You can find `various instructions for installing the SciPy
-stack`_ on the SciPy website.
+provided in Anaconda 2.2.0 (Python 2.7.9, Python 3.4.3). SymPy 0.7.6 and PyDy
+0.3.0 are hard dependencies. You can find `various instructions for installing
+the SciPy stack`_ on the SciPy website.
 
 .. _various instructions for installing the SciPy stack: http://www.scipy.org/install.html
 
