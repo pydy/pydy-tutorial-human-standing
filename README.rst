@@ -174,15 +174,15 @@ Notebooks
 These are the notebooks for the tutorial.
 
 - [15 min] n00_python_intro.ipynb_
-- [10 min] n01_dynamics_overview.ipynb_
-- [ 3 min] n02_problem_introduction.ipynb_
-- [28 min] n03_kinematics.ipynb_
-- [13 min] n04_inertia.ipynb_
-- [18 min] n05_kinetics.ipynb_
-- [18 min] n06_equations_of_motion.ipynb_
-- [23 min] n07_simulation.ipynb_
-- [18 min] n08_visualization.ipynb_
-- [20 min] n09_control.ipynb_
+- [14 min] n01_dynamics_overview.ipynb_
+- [ 4 min] n02_problem_introduction.ipynb_
+- [39 min] n03_kinematics.ipynb_
+- [18 min] n04_inertia.ipynb_
+- [25 min] n05_kinetics.ipynb_
+- [25 min] n06_equations_of_motion.ipynb_
+- [32 min] n07_simulation.ipynb_
+- [25 min] n08_visualization.ipynb_
+- [28 min] n09_control.ipynb_
 
 .. _n00_python_intro.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-human-standing/blob/master/notebooks/n00_python_intro.ipynb
 .. _n01_dynamics_overview.ipynb: http://nbviewer.ipython.org/github/pydy/pydy-tutorial-human-standing/blob/master/notebooks/n01_dynamics_overview.ipynb
