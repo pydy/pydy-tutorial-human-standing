@@ -15,7 +15,7 @@ except ImportError:
 else:
     if LooseVersion(sympy.__version__) < LooseVersion('0.7.6'):
         msg = ("Error: SymPy >= 0.7.6 is required for correct notebook "
-               + "printing, please upgrade.")
+               "printing, please upgrade.")
         print(msg)
 
 try:
@@ -26,6 +26,12 @@ else:
     if LooseVersion(IPython.__version__) < LooseVersion('3.0.0'):
         msg = ("Error: IPython >= 3.0.0 is required for the 3D visualizations.")
         print(msg)
+
+    if LooseVersion(IPython.__version__) >= LooseVersion('4.0.0'):
+        try:
+            __import__('ipywidgets')
+        except ImportError:
+            print('Error: ipywidgets is required for IPython >= 4.0')
 
 try:
     import pydy
