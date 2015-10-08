@@ -75,12 +75,12 @@ no longer want the files.
 .. _Anaconda Scientific Python Distribution: https://store.continuum.io/cshop/anaconda/
 
 First, `download and install Anaconda <http://continuum.io/downloads>`_ for
-your operating system. After Anaconda is installed update various packages to
+your operating system. After Anaconda is installed, update various packages to
 the latest versions by issuing this command in a terminal::
 
-   $ conda update numpy scipy sympy matplotlib ipython-notebook
+   $ conda update numpy scipy sympy matplotlib ipython-notebook ipywidgets
 
-Now instal the latest PyDy (0.3.0) with::
+Now install the latest PyDy with::
 
    $ conda install -c pydy pydy
 
@@ -88,16 +88,25 @@ Now instal the latest PyDy (0.3.0) with::
 MathJax
 -------
 
+**This is only required if you want to run the tutorial without internet
+access.**
+
 These notebooks make use of the MathJax_ javascript library to render and
-display mathematics. By default IPython loads MathJax from a CDN, however,
-because of potentially questionable internet access at the conference we
-recommend you install MathJax locally. To do so, simply start an IPython
-session in a terminal and run the following command::
+display mathematics. By default IPython loads MathJax from the internet (i.e.
+from a CDN), however, because of potentially questionable internet access at
+the conference we recommend you install MathJax locally. To do so, simply start
+an IPython session in a terminal::
+
+  $ ipython
+
+and run the following command::
 
    In [1]: from IPython.external import mathjax
    In [2]: mathjax.install_mathjax()
 
 .. _MathJax: http://www.mathjax.org/
+
+To exit IPython type ``<Ctrl-D>``.
 
 Web Browser
 -----------
@@ -123,18 +132,25 @@ Latest version of Chrome works and IE 11 works.
 We know that some OS browser combinations do not work. See
 https://github.com/pydy/pydy/issues/36 for more details.
 
-Advanced SciPy Stack Installation
----------------------------------
+Download the tutorial
+=====================
 
-There are many methods to installing the SciPy Stack. If you know what you are
-doing then feel free to install relatively recent versions of NumPy (>= 1.6),
-SciPy (>= 0.9), matplotlib (>= 0.10), and IPython (>=0.3.0) however you like.
-Keep in mind that the tutorial will be tested to work with the versions
-provided in Anaconda 2.2.0 (Python 2.7.9, Python 3.4.3). SymPy 0.7.6 and PyDy
-0.3.0 are hard dependencies. You can find `various instructions for installing
-the SciPy stack`_ on the SciPy website.
+Either download the latest zipped tutorial materials from:
 
-.. _various instructions for installing the SciPy stack: http://www.scipy.org/install.html
+https://github.com/pydy/pydy-tutorial-human-standing/archive/master.zip
+
+Or download the specific release for your conference from:
+
+https://github.com/pydy/pydy-tutorial-human-standing/releases
+
+and then extract the zip file.
+
+Use
+===
+
+From the terminal, navigate to the extracted tutorial directory, for example::
+
+   $ cd /home/username/pydy-tutorial-human-standing
 
 Check the environment
 ---------------------
@@ -148,21 +164,9 @@ If no errors are returned, then you've correctly installed the software and can
 run the tutorial. If errors appear, then install or upgrade the software as
 needed.
 
-Use
-===
-
-Either download the latest zipped tutorial materials from:
-
-https://github.com/pydy/pydy-tutorial-human-standing/archive/master.zip
-
-Or download the specific release for your conference from:
-
-https://github.com/pydy/pydy-tutorial-human-standing/releases
-
-and then extract the zip file.
-
 Open a terminal window in the ``notebooks`` directory and type::
 
+   $ cd notebooks
    $ ipython notebook
 
 Your web browser should open and you see a list of all the notebooks and can
