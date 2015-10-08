@@ -80,7 +80,7 @@ the latest versions by issuing this command in a terminal::
 
    $ conda update numpy scipy sympy matplotlib ipython-notebook ipywidgets
 
-Now instal the latest PyDy with::
+Now install the latest PyDy with::
 
    $ conda install -c pydy pydy
 
