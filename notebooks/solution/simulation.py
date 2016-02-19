@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from numpy import array, linspace, deg2rad, ones, concatenate
+from numpy import array, linspace, deg2rad, zeros
 from scipy.integrate import odeint
 from pydy.codegen.ode_function_generators import generate_ode_function
 
@@ -44,9 +44,9 @@ right_hand_side = generate_ode_function(forcing_vector, coordinates, speeds,
 # Specify Numerical Quantities
 # ============================
 
-initial_coordinates = deg2rad(5.0) * array([-1, 1, -1])
-initial_speeds = deg2rad(-5.0) * ones(len(speeds))
-x0 = concatenate((initial_coordinates, initial_speeds), axis=1)
+x0 = zeros(6)
+x0[:3] = deg2rad(2.0)
+
 
 # taken from male1.txt in yeadon (maybe I should use the values in Winters).
 numerical_constants = array([0.611,  # lower_leg_length [m]
