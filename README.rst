@@ -84,6 +84,10 @@ Now install the latest PyDy with::
 
    $ conda install -c pydy pydy
 
+Lastly we are using an older version of ipywidgets and so you may need to issue
+the following command to terminal::
+
+   $ pip install ipywidgets==4.1.1
 
 MathJax
 -------
