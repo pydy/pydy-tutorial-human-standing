@@ -84,7 +84,6 @@ Now install the latest PyDy with::
 
    $ conda install -c pydy pydy
 
-
 MathJax
 -------
 
@@ -94,19 +93,12 @@ access.**
 These notebooks make use of the MathJax_ javascript library to render and
 display mathematics. By default IPython loads MathJax from the internet (i.e.
 from a CDN), however, because of potentially questionable internet access at
-the conference we recommend you install MathJax locally. To do so, simply start
-an IPython session in a terminal::
+the conference we recommend you install MathJax locally. To do so, type the
+following in a terminal::
 
-  $ ipython
-
-and run the following command::
-
-   In [1]: from IPython.external import mathjax
-   In [2]: mathjax.install_mathjax()
+   $ conda install mathjax
 
 .. _MathJax: http://www.mathjax.org/
-
-To exit IPython type ``<Ctrl-D>``.
 
 Web Browser
 -----------
