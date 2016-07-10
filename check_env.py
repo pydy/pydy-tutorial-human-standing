@@ -2,7 +2,8 @@
 
 from distutils.version import LooseVersion
 
-for module in ['IPython', 'sympy', 'pydy', 'numpy', 'scipy', 'matplotlib']:
+for module in ['IPython', 'sympy', 'pydy', 'numpy', 'scipy', 'matplotlib',
+               'ipywidgets']:
     try:
         __import__(module)
     except ImportError:
@@ -32,6 +33,14 @@ else:
             __import__('ipywidgets')
         except ImportError:
             print('Error: ipywidgets is required for IPython >= 4.0')
+
+try:
+    import ipywidgets
+except ImportError:
+    pass
+else:
+    if LooseVersion(ipywidgets.__version__) >= LooseVersion('5.0.0'):
+        print('Error: ipywidgets < 5.0 is required for tutorial')
 
 try:
     import pydy
