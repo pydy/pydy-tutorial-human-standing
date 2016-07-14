@@ -1,0 +1,9 @@
+channels:
+  - pydy
+dependencies:
+  - numpy
+  - scipy
+  - sympy
+  - matplotlib
+  - ipython-notebook
+  - pydy
