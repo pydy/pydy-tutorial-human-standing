@@ -25,7 +25,7 @@ loads = [lower_leg_grav_force,
 
 bodies = [lower_leg, upper_leg, torso]
 
-fr, frstar = kane.kanes_equations(loads, bodies)
+fr, frstar = kane.kanes_equations(bodies, loads)
 
 mass_matrix = kane.mass_matrix_full
 forcing_vector = kane.forcing_full
