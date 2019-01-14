@@ -33,9 +33,17 @@ The attendees will be exposed to various functionality of these Python tools:
 .. _PyDy: http://www.pydy.org
 
 The tutorial can be run locally or through the Binder service:
-   
+
 .. image:: https://mybinder.org/badge_logo.svg
    :target: https://mybinder.org/v2/gh/pydy/pydy-tutorial-human-standing/master
+
+Videos
+======
+
+- PYCON 2014: https://youtu.be/IoMR-ESzqw8
+- SCIPY 2014: https://youtu.be/lWbeuDwYVto, https://youtu.be/1-KqRvNX0po
+- SCIPY 2015: https://youtu.be/mdo2NYtA-xY
+- SCIPY 2016: https://youtu.be/r4piIKV4sDw
 
 License
 =======
