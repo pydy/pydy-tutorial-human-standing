@@ -7,7 +7,7 @@ Biomechanical Systems with Python" at the `Midwest American Society of
 Biomechanics Regional meeting
 <http://www.uakron.edu/engineering/BME/ASB2014/>`_ on March 4th, 2014 in Akron,
 Ohio. Modified versions have subsequently been given at PYCON2014, SCIPY2014,
-and SCIPY2015.
+SCIPY2015, and SCIPY 2016.
 
 .. _multibody dynamics: http://en.wikipedia.org/wiki/Multibody_system
 
@@ -78,11 +78,11 @@ First, `download and install Anaconda <http://continuum.io/downloads>`_ for
 your operating system. After Anaconda is installed, update various packages to
 the latest versions by issuing this command in a terminal::
 
-   $ conda update numpy scipy sympy matplotlib ipython-notebook ipywidgets
+   $ conda update numpy scipy sympy matplotlib notebook ipywidgets
 
 Now install the latest PyDy with::
 
-   $ conda install -c pydy pydy
+   $ conda install -c conda-forge pydy
 
 MathJax
 -------
