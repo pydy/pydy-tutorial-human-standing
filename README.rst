@@ -33,9 +33,9 @@ The attendees will be exposed to various functionality of these Python tools:
 .. _PyDy: http://www.pydy.org
 
 The tutorial can be run locally or through the Binder service:
-
-.. image:: http://mybinder.org/badge.svg
-   :target: http://mybinder.org:/repo/pydy/pydy-tutorial-human-standing
+   
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/pydy/pydy-tutorial-human-standing/master
 
 License
 =======
